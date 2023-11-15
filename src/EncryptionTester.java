@@ -11,6 +11,7 @@ public class EncryptionTester {
 
         Encrypter enc = new Encrypter(shift);
 
+<<<<<<< HEAD
         
         System.out.println("Encrypting...");
 		enc.encrypt(inputFilePath, outputFilePath);
@@ -28,8 +29,16 @@ public class EncryptionTester {
 		
 		System.out.println("It works.");
 		
+=======
+		enc.encrypt(inputFilePath, outputFilePath);
+		enc.decrypt(encryptedFilePath, decryptedFilePath);
+>>>>>>> origin/main
 
 	}
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

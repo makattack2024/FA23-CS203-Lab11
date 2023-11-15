@@ -7,7 +7,10 @@ public class Encrypter {
 
     private int shift;
     private String encrypted;
+<<<<<<< HEAD
     private String decrypted;
+=======
+>>>>>>> origin/main
 
     /**
      * Default Constructor
@@ -34,6 +37,7 @@ public class Encrypter {
      * @throws Exception if an error occurs while reading or writing the files
      */
     public void encrypt(String inputFilePath, String encryptedFilePath) throws Exception {
+<<<<<<< HEAD
         //TODO: Call the read method, encrypts it using cipher, and writes to new file
     	String content = readFile(inputFilePath); // reads the conent from input
     	String encryptedContent = encryptText(content, shift); // encrypt the content with cipher with specific shift
@@ -56,6 +60,9 @@ public class Encrypter {
     	}
     	// return the encrypted text
     	return encrypted.toString();
+=======
+        //TODO: Call the read method, encrypt the file contents, and then write to new file
+>>>>>>> origin/main
     }
 
     /**
@@ -65,6 +72,7 @@ public class Encrypter {
      * @param decryptedFilePath the path to the file where the decrypted text will be written
      * @throws Exception if an error occurs while reading or writing the files
      */
+<<<<<<< HEAD
     
     //get decrypted text
     public String getDecrypted() {
@@ -91,6 +99,10 @@ public class Encrypter {
     		}
     	}
     	return decrypted.toString();
+=======
+    public void decrypt(String messageFilePath, String decryptedFilePath) throws Exception {
+        //TODO: Call the read method, decrypt the file contents, and then write to new file
+>>>>>>> origin/main
     }
 
     /**
@@ -101,6 +113,7 @@ public class Encrypter {
      * @throws Exception if an error occurs while reading the file
      */
     private static String readFile(String filePath) throws Exception {
+<<<<<<< HEAD
     	 //TODO: Read file from filePath
     	StringBuilder content = new StringBuilder();
     	try (Scanner scanner = new Scanner(new File(filePath))){
@@ -110,6 +123,11 @@ public class Encrypter {
     	}
       
         return content.toString(); //returns as a string
+=======
+        String message = "";
+        //TODO: Read file from filePath
+        return message;
+>>>>>>> origin/main
     }
 
     /**
@@ -120,11 +138,14 @@ public class Encrypter {
      */
     private static void writeFile(String data, String filePath) {
         //TODO: Write to filePath
+<<<<<<< HEAD
     	try(FileWriter writer = new FileWriter(filePath)) {
     		writer.write(data);
     	} catch (IOException e) {
     		e.printStackTrace(); //handle the exception when needed
     	}
+=======
+>>>>>>> origin/main
     }
 
     /**
@@ -136,4 +157,8 @@ public class Encrypter {
     public String toString() {
         return encrypted;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
